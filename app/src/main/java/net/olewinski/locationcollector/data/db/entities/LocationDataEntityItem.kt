@@ -10,7 +10,7 @@ import net.olewinski.locationcollector.data.db.DbSchemaConstants.LOCATION_DATA_E
 import net.olewinski.locationcollector.data.db.DbSchemaConstants.LOCATION_DATA_ENTITY_TIMESTAMP_COLUMN_NAME
 
 @Entity(tableName = LOCATION_DATA_ENTITY_TABLE_NAME)
-data class LocationData(
+data class LocationDataEntityItem(
     @ColumnInfo(name = LOCATION_DATA_ENTITY_LATITUDE_COLUMN_NAME)
     val latitude: Double,
 

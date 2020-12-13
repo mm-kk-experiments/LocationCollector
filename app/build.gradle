@@ -67,8 +67,11 @@ dependencies {
     // Fragment KTX
     implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
 
-    // Timber
-    implementation "com.jakewharton.timber:timber:$timber_version"
+    // WorkManager
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    // Play Services - Location
+    implementation "com.google.android.gms:play-services-location:$play_services_location_version"
 
     // Tests
     testImplementation "junit:junit:$junit_version"

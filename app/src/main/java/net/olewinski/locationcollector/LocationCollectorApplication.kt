@@ -4,6 +4,7 @@ package net.olewinski.locationcollector
 
 import android.app.Application
 import net.olewinski.locationcollector.di.modules.databaseModule
+import net.olewinski.locationcollector.di.modules.locationModule
 import net.olewinski.locationcollector.di.modules.repositoryModule
 import net.olewinski.locationcollector.di.modules.viewModelsModule
 import org.koin.android.ext.koin.androidContext
@@ -16,7 +17,7 @@ class LocationCollectorApplication : Application() {
         startKoin {
             androidContext(this@LocationCollectorApplication)
 
-            modules(listOf(databaseModule, repositoryModule, viewModelsModule))
+            modules(listOf(databaseModule, repositoryModule, viewModelsModule, locationModule))
         }
     }
 }

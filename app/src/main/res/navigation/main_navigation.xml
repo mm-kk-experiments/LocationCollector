@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="net.olewinski.locationcollector.ui.screens.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" />
+    <fragment
+        android:id="@+id/foregroundLocationPermissionRequestFragment"
+        android:name="net.olewinski.locationcollector.ui.screens.ForegroundLocationPermissionRequestFragment"
+        android:label="fragment_foreground_location_permission_request"
+        tools:layout="@layout/fragment_foreground_location_permission_request" />
+    <action
+        android:id="@+id/action_global_splashScreenFragment"
+        app:destination="@id/splashScreenFragment"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_foregroundLocationPermissionRequestFragment"
+        app:destination="@id/foregroundLocationPermissionRequestFragment"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/backgroundLocationPermissionRequestFragment"
+        android:name="net.olewinski.locationcollector.ui.screens.BackgroundLocationPermissionRequestFragment"
+        android:label="fragment_background_location_permission_request"
+        tools:layout="@layout/fragment_background_location_permission_request" />
+    <action
+        android:id="@+id/action_global_backgroundLocationPermissionRequestFragment"
+        app:destination="@id/backgroundLocationPermissionRequestFragment"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="net.olewinski.locationcollector.ui.screens.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/sorryFragment"
+        android:name="net.olewinski.locationcollector.ui.screens.SorryFragment"
+        android:label="SorryFragment" />
+    <action android:id="@+id/action_global_sorryFragment" app:destination="@id/sorryFragment" />
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+</navigation>

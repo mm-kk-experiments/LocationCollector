@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">LocationCollector</string>
+
+    <string name="continue_button_label">Continue</string>
+
+    <string name="foreground_location_permission_request_screen_title">Permission required for accessing device\'s location</string>
+    <string name="foreground_location_permission_request_screen_message">The app needs an access to your device\'s location\nPlease tap <b>Continue</b> button and grant the permission. Otherwise, app won\'t be able to work.</string>
+
+    <string name="background_location_permission_request_screen_title">Permission required for collecting device\'s location in background</string>
+    <string name="background_location_permission_request_screen_message">The app needs your permission to access your device\'s location in background.\nPlease tap <b>Continue</b> button and grant the permission. Otherwise, app won\'t be able to work.</string>
+
+    <string name="back_button_label">Back</string>
+    <string name="leave_the_app_button_label">Leave the app</string>
+
+    <string name="sorry_screen_title">Sorry, app won\'t be working</string>
+    <string name="sorry_screen_message">We\'re sorry, but the app can\'t work with required permissions.\nYou can go <b>Back</b> and change your mind or <b>Leave the app</b>.</string>
 </resources>

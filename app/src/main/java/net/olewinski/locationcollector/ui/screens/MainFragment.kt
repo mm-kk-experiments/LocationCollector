@@ -28,6 +28,7 @@ class MainFragment : Fragment() {
             if (allLocationData.isNotEmpty()) {
                 val builder = LatLngBounds.Builder()
 
+                // TODO remove old markers
                 allLocationData.forEach { locationData ->
                     val marker = googleMap.addMarker(
                         MarkerOptions().position(
@@ -41,12 +42,7 @@ class MainFragment : Fragment() {
                     builder.include(marker.position)
                 }
 
-                val bounds = builder.build()
-
-                val padding = 0 // offset from edges of the map in pixels
-
-                val cu = CameraUpdateFactory.newLatLngBounds(bounds, padding)
-                googleMap.animateCamera(cu)
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), 10))
             }
         }
     }

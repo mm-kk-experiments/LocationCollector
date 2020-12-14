@@ -6,7 +6,6 @@ import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.component.KoinApiExtension
 import org.koin.dsl.module
 
-@OptIn(KoinApiExtension::class)
 val viewModelsModule = module {
     viewModel { OnboardingViewModel() }
     viewModel { MainFragmentViewModel(get(), get()) }

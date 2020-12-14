@@ -14,4 +14,8 @@
 
     <string name="sorry_screen_title">Sorry, app won\'t be working</string>
     <string name="sorry_screen_message">We\'re sorry, but the app can\'t work with required permissions.\nYou can go <b>Back</b> and change your mind or <b>Leave the app</b>.</string>
+
+    <string name="background_location_check_notification_content_text">Checking device\'s location</string>
+    <string name="background_location_check_notification_channel_name">Device\'s location check notifications</string>
+    <string name="background_location_check_notification_channel_description">Shows notifications informing that app currently checks device\'s location</string>
 </resources>

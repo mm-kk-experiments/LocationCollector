@@ -15,7 +15,7 @@ import kotlin.coroutines.resumeWithException
 
 private const val UPDATE_INTERVAL_MILLISECONDS = 10000L
 private const val FASTEST_UPDATE_INTERVAL_MILLISECONDS = 5000L
-private const val LOCATION_REQUEST_EXPIRATION_TIMEOUT_MILLISECONDS = 60000L
+private const val LOCATION_REQUEST_EXPIRATION_TIMEOUT_MILLISECONDS = 180000L
 
 class PermissionsDeniedException : Exception()
 

@@ -2,16 +2,16 @@ package net.olewinski.locationcollector.viewmodels
 
 import androidx.lifecycle.ViewModel
 import net.olewinski.locationcollector.data.repository.LocationRepository
-import net.olewinski.locationcollector.location.RecurringLocationCollector
+import net.olewinski.locationcollector.location.LocationCollectionScheduler
 import org.koin.core.component.KoinApiExtension
 
 @KoinApiExtension
 class MainFragmentViewModel(
-    recurringLocationCollector: RecurringLocationCollector,
+    locationCollectionScheduler: LocationCollectionScheduler,
     locationRepository: LocationRepository
 ) : ViewModel() {
     init {
-        recurringLocationCollector.enqueueWork()
+        locationCollectionScheduler.scheduleImmediate()
     }
 
     val allLocationData = locationRepository.allLocationData

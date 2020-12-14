@@ -67,9 +67,6 @@ dependencies {
     // Fragment KTX
     implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
 
-    // WorkManager
-    implementation "androidx.work:work-runtime-ktx:$work_version"
-
     // Play Services - Location
     implementation "com.google.android.gms:play-services-location:$play_services_location_version"
 

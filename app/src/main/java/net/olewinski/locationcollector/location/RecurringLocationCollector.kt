@@ -6,7 +6,6 @@ import android.content.Context
 import android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION
 import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.work.CoroutineWorker
 import androidx.work.ExistingPeriodicWorkPolicy
@@ -29,7 +28,7 @@ private const val BACKGROUND_LOCATION_CHECK_NOTIFICATION_CHANNEL_ID =
     "BACKGROUND_LOCATION_CHECK_NOTIFICATION_CHANNEL_ID"
 private const val FETCH_LOCATION_TIMEOUT_MILLISECONDS = 60000L
 private const val SAVE_LOCATION_WORK_TAG = "SAVE_LOCATION_WORK_TAG"
-private const val SAVE_LOCATION_WORK_INTERVAL_TIME_VALUE = 15L
+private const val SAVE_LOCATION_WORK_INTERVAL_TIME_VALUE = 60L
 private val SAVE_LOCATION_WORK_INTERVAL_TIME_UNIT = TimeUnit.MINUTES
 
 class RecurringLocationCollector(private val workManager: WorkManager) {
